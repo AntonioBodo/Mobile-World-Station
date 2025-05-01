@@ -1,0 +1,1699 @@
+body { 
+
+    background-color: #ffffff; 
+
+}  
+
+
+
+/* Base styles for the menu */
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; /* Default: stack items vertically */
+  background-color: #00d9ffa1;
+  border-radius: 10px;
+  padding: 10px 0;
+  /* Animation properties */
+  max-height: 0; /* Initially hidden */
+  overflow: hidden; /* Prevent content from overflowing */
+  opacity: 0; /* Fully transparent */
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+
+}
+
+.menu a {
+  text-decoration: none; /* Remove underlines from links */
+  color: white; /* Ensure the text color is visible */
+
+}
+
+.menu.show {
+  max-height: 300px; /* Adjust based on the menu's content height */
+  opacity: 1; /* Fully visible */
+  
+}
+
+.menu-toggle {
+  display: none; /* Hidden by default */
+  background-color: #00d9ffa1;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 320px) {
+  .menu {
+    display: flex; /* Ensure the menu is flexbox */
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 15px;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the toggle button */
+    width: 100%;
+    text-align: left;
+  
+  }
+
+.menu.show {
+  max-height: 300px; /* Adjust based on the menu's content height */
+  opacity: 1; /* Fully visible */
+}
+  .header {
+    position: relative; /* Keeps the header in its original position */
+    z-index: 1;
+    
+    border-radius: 10px;
+  
+    background-color: #00d9ffa1; /* Optional: remove background color */
+    visibility: visible;
+    width: 75%;
+   
+    padding: 10px; /* Add some padding for aesthetics */
+   
+    margin-top: -65px;
+    margin-left: 60px; /* Center the header */
+    height: 20px;
+    
+
+  }
+
+  .header h1 {
+
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 22.9px;
+    margin-top: 0;
+  }
+
+  .footer {
+    position: relative; /* Default position */
+    width: 100%;
+    background-color: #00d9ffa1;
+    color: rgb(44, 36, 36);
+   
+    padding: 10px 0;
+    margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+  
+    
+  }
+
+  .footer p { /* the text of the footer */
+  
+     
+    margin-top:  -10px;
+    
+    font-family: sans-serif;
+    font-weight: 600;
+   
+
+  }
+  
+  .important {
+    text-align: center;
+    margin-bottom: -5px;
+    font-size: 15px;
+    font-family: monospace;
+  }
+
+
+
+  .container1 {
+    
+    width: 80%;
+    height: 300px;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 50px;
+   
+  }
+
+
+  .image1 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+  }
+
+  .c1 {
+   
+    height: 380px;
+    margin-bottom:  20px;
+    
+  }
+
+
+  .c2 {
+    width: 100%;
+    
+    height: 300px;
+    margin-bottom:  20px;
+    
+  }
+
+  .container2 {
+    
+    width: 90% !important;
+    height: 40%;
+  
+    margin: 0 auto; /* Center the container */
+    
+   
+  }
+
+
+
+  .image2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    
+  }
+
+
+
+  .c3 {
+    
+    height: 220px;
+    margin-bottom: 0px;
+   
+  }
+
+  .container3 {
+    
+    width: 80%;
+    height: 210px;
+
+    margin: 0 auto; /* Center the container */
+    
+  }
+
+
+
+  .image3 {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.dealbuynow {
+  
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+}
+
+.dealbuynow2 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -40px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+.dealbuynow3 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -62px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+ .dealtitle {
+  background-color:#00d9ffa1 ;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+ }
+
+.maincontainer {
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.verticalcontainer {
+  display: hidden; /* Hide the vertical container by default */
+}
+
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+  .menu {
+    display: flex; /* Ensure the menu is flexbox */
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 15px;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the toggle button */
+    width: 100%;
+    text-align: left;
+  
+  }
+
+.menu.show {
+  max-height: 300px; /* Adjust based on the menu's content height */
+  opacity: 1; /* Fully visible */
+}
+  .header {
+    position: relative; /* Keeps the header in its original position */
+    z-index: 1;
+    
+    border-radius: 10px;
+  
+    background-color: #00d9ffa1; /* Optional: remove background color */
+    visibility: visible;
+    width: 75%;
+   
+    padding: 10px; /* Add some padding for aesthetics */
+   
+    margin-top: -65px;
+    margin-left: 60px; /* Center the header */
+    height: 20px
+    
+
+  }
+
+  .header h1 {
+
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 22.9px;
+    margin-top: 0;
+  }
+
+  .footer {
+    position: relative; /* Default position */
+    width: 100%;
+    background-color: #00d9ffa1;
+    color: rgb(44, 36, 36);
+   
+    padding: 10px 0;
+    margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+  
+    
+  }
+
+  .footer p { /* the text of the footer */
+  
+     
+    margin-top:  -10px;
+    
+    font-family: sans-serif;
+    font-weight: 600;
+   
+
+  }
+  
+  .important {
+    text-align: center;
+    margin-bottom: -5px;
+    font-size: 15px;
+    font-family: monospace;
+  }
+
+
+
+  .container1 {
+    
+    width: 80%;
+    height: 300px;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 50px;
+    
+  }
+
+
+  .image1 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+  }
+
+  .c1 {
+   
+    height: 380px;
+    margin-bottom:  20px;
+  }
+
+
+  .c2 {
+   
+    width: 100%;
+    height: 300px;
+    margin-bottom:  20px;
+    
+  }
+
+  .container2 {
+
+    
+    height: 250px;
+    width: 50%;
+    margin: 0 auto; /* Center the container */
+    
+  
+  }
+
+
+
+  .image2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+   
+    
+  }
+
+
+
+  .c3 {
+    
+    height: 270px;
+    margin-bottom: 0px;
+  }
+
+  .container3 {
+    
+    width: 80%;
+    height: 210px;
+   
+    margin: 0 auto; /* Center the container */
+    
+  }
+
+
+
+  .image3 {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.dealbuynow {
+  
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+}
+
+.dealbuynow2 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+.dealbuynow3 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+ .dealtitle {
+  background-color:#00d9ffa1 ;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+ }
+
+
+ 
+
+ .maincontainer {
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.verticalcontainer {
+  display: hidden; /* Hide the vertical container by default */
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 430px) {
+
+  .menu {
+    display: flex; /* Ensure the menu is flexbox */
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 15px;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the toggle button */
+    width: 100%;
+    text-align: left;
+  
+  }
+
+.menu.show {
+  max-height: 300px; /* Adjust based on the menu's content height */
+  opacity: 1; /* Fully visible */
+}
+  .header {
+    position: relative; /* Keeps the header in its original position */
+    z-index: 1;
+    
+    border-radius: 10px;
+  
+    background-color: #00d9ffa1; /* Optional: remove background color */
+    visibility: visible;
+    width: 75%;
+   
+    padding: 10px; /* Add some padding for aesthetics */
+   
+    margin-top: -65px;
+    margin-left: 60px; /* Center the header */
+    height: 20px
+    
+
+  }
+
+  .header h1 {
+
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 22.9px;
+    margin-top: 0;
+  }
+
+  .footer {
+    position: relative; /* Default position */
+    width: 100%;
+    background-color: #00d9ffa1;
+    color: rgb(44, 36, 36);
+   
+    padding: 10px 0;
+    margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+  
+    
+  }
+
+  .footer p { /* the text of the footer */
+  
+     
+    margin-top:  -10px;
+    
+    font-family: sans-serif;
+    font-weight: 600;
+   
+
+  }
+  
+  .important {
+    text-align: center;
+    margin-bottom: -5px;
+    font-size: 15px;
+    font-family: monospace;
+  }
+
+
+
+  .container1 {
+    
+    width: 80%;
+    height: 300px;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 50px;
+    
+  }
+
+
+  .image1 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+  }
+
+  .c1 {
+   
+    height: 380px;
+    margin-bottom:  20px;
+  }
+
+
+  .c2 {
+   
+
+    margin-bottom:  20px;
+  }
+
+  .container2 {
+
+    width: 90%;
+    height: 240px;
+    
+    margin: 0 auto; /* Center the container */
+
+  
+  }
+
+
+
+  .image2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    
+  }
+
+
+
+  .c3 {
+    
+    height: 270px;
+    margin-bottom: 0px;
+  }
+
+  .container3 {
+    
+    width: 80%;
+    height: 210px;
+   
+    margin: 0 auto; /* Center the container */
+    
+  }
+
+
+
+  .image3 {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.dealbuynow {
+  
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+}
+
+.dealbuynow2 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+.dealbuynow3 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+ .dealtitle {
+  background-color:#00d9ffa1 ;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+ }
+
+ 
+ .maincontainer {
+
+  display: flex;
+  flex-direction: column;
+}
+.verticalcontainer {
+  display: hidden; /* Hide the vertical container by default */
+}
+
+   }
+
+
+   @media only screen and (min-width: 426px) and (max-width: 768px)  {
+
+
+    .menu {
+      display: flex; /* Ensure the menu is flexbox */
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 15px;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show the toggle button */
+      width: 100%;
+      text-align: left;
+    
+    }
+  
+  .menu.show {
+    max-height: 300px; /* Adjust based on the menu's content height */
+    opacity: 1; /* Fully visible */
+  }
+    .header {
+      position: relative; /* Keeps the header in its original position */
+      z-index: 1;
+      
+      border-radius: 10px;
+    
+      background-color: #00d9ffa1; /* Optional: remove background color */
+      visibility: visible;
+      width: 75%;
+     
+      padding: 10px; /* Add some padding for aesthetics */
+     
+      margin-top: -65px;
+      margin-left: 60px; /* Center the header */
+      height: 20px
+      
+  
+    }
+  
+    .header h1 {
+  
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 22.9px;
+      margin-top: 0;
+    }
+  
+    .footer {
+      position: relative; /* Default position */
+      width: 100%;
+      background-color: #00d9ffa1;
+      color: rgb(44, 36, 36);
+     
+      padding: 10px 0;
+      margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+    
+      
+    }
+  
+    .footer p { /* the text of the footer */
+    
+       
+      margin-top:  -10px;
+      
+      font-family: sans-serif;
+      font-weight: 600;
+     
+  
+    }
+    
+    .important {
+      text-align: center;
+      margin-bottom: -5px;
+      font-size: 15px;
+      font-family: monospace;
+    }
+  
+  
+  
+    .container1 {
+      
+      width: 80%;
+      height: px;
+      margin: 0 auto; /* Center the container */
+      margin-bottom: 50px;
+     
+    }
+  
+  
+    .image1 {
+  
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire container */
+      border-radius: 10px; /* Optional: add rounded corners */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+    }
+  
+    .c1 {
+      
+      height: 730px;
+      margin-bottom:  100px;
+    }
+  
+  
+    .c2 {
+     
+     
+      margin-bottom:  100px;
+      
+      height: 620px;
+    }
+  
+    .container2 {
+ 
+      width: 87%;
+      height: 520px;
+     
+      margin: 0 auto; /* Center the container */
+  
+    
+    }
+  
+  
+  
+    .image2 {
+  
+      width: 100%;
+      height: 100%;
+      object-fit: contain;  /* Ensure the image covers the entire container */
+      border-radius: 10px; /* Optional: add rounded corners */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+      
+    }
+  
+  
+  
+    .c3 {
+   
+      height: 600px;
+      margin-bottom: 0px;
+    }
+  
+    .container3 {
+    
+      width: 80%;
+      height: 500px;
+     
+      margin: 0 auto; /* Center the container */
+      
+    }
+  
+  
+  
+    .image3 {
+      
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensure the image covers the entire container */
+      border-radius: 10px; /* Optional: add rounded corners */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+  
+  
+  
+  .dealbuynow {
+    
+      background-color:#09ff2aa1 ;
+      width: 70%;
+      text-align: center;
+      margin-left: auto;
+      margin-top: -40px;
+      margin-right: auto;
+      margin-bottom: 65px;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+     
+    
+  }
+  
+  .dealbuynow2 {
+    
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+  }
+  .dealbuynow3 {
+    
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+  }
+   .dealtitle {
+    background-color:#00d9ffa1 ;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+   }
+  
+   .maincontainer {
+   
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .verticalcontainer {
+    display: hidden; /* Hide the vertical container by default */
+  }
+  
+  }
+
+
+
+/* Styles for larger screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu {
+    display: flex; /* Ensure the menu is flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-around; /* Space items evenly */
+    max-height: none; /* Remove height restriction */
+    opacity: 1; /* Fully visible */
+    background-color: #00d9ffa1; /* Optional: remove background color */
+    padding: 1; /* Optional: remove padding */
+  }
+
+
+
+
+  .menu a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Ensure the text color is visible */
+    font-weight: bold;
+  }
+
+
+
+  .menu-toggle {
+    display: none; /* Hide the toggle button */
+
+    
+  }
+  .header {
+    border-style: solid;
+    visibility: hidden;
+  }
+
+  .container1 {
+      
+    width: 99%;
+    height: 92%;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 50px;
+   
+  }
+
+
+  .image1 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+  }
+
+  .c1 {
+    
+    height: 750px;
+   
+    width: 60%;
+    scale: 1;
+  }
+
+
+  .c2 {
+   
+    width: 100%;
+ 
+    
+    height: 380px;
+    margin-bottom: 40px;
+  }
+
+  .container2 {
+
+    width: 74.5%;
+    height: 340px;
+   
+    margin: 0 auto; /* Center the container */
+
+  
+    scale: 1;
+  }
+
+
+
+  .image2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    
+  }
+
+
+
+  .c3 {
+ 
+    height: 430px;
+    width: 100%;
+  }
+
+  .container3 {
+
+    width: 100%;
+    height: 350px;
+   
+    margin: 0 auto; /* Center the container */
+    
+  }
+
+
+
+  .image3 {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.dealbuynow {
+  
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+}
+
+.dealbuynow2 {
+  
+  background-color:#09ff2aa1 ;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+
+}
+.dealbuynow3 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+
+.dealtitle {
+  background-color:#00d9ffa1 ;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+ }
+ .maincontainer {
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  scale: 0.9;
+
+ .verticalcontainer {
+
+  display: flex; /* Show the vertical container */
+  flex-direction: column; /* Stack items vertically */
+  width: 80%;
+  align-items: center;
+   
+
+}
+ }
+.footer {
+  position: relative; /* Default position */
+  width: 100%;
+  background-color: #bbbbbb;
+  color: rgb(44, 36, 36);
+ 
+  padding: 10px 0;
+  margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+
+  
+}
+
+.footer p { /* the text of the footer */
+
+   
+  margin-top:  -10px;
+  
+  font-family: sans-serif;
+  font-weight: 600;
+ 
+
+}
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+
+
+  .menu {
+    display: flex; /* Ensure the menu is flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-around; /* Space items evenly */
+    max-height: none; /* Remove height restriction */
+    opacity: 1; /* Fully visible */
+    background-color: #00d9ffa1; /* Optional: remove background color */
+    padding: 1; /* Optional: remove padding */
+  }
+
+
+
+
+  .menu a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Ensure the text color is visible */
+    font-weight: bold;
+  }
+
+
+
+  .menu-toggle {
+    display: none; /* Hide the toggle button */
+
+    
+  }
+  .header {
+    border-style: solid;
+    visibility: hidden;
+  }
+
+  .container1 {
+      
+    width: 99%;
+    height: 92%;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 50px;
+   
+  }
+
+
+  .image1 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+  }
+
+  .c1 {
+    
+    height: 750px;
+   
+    width: 60%;
+    scale: 1;
+  }
+
+
+  .c2 {
+   
+    width: 100%;
+ 
+    
+    height: 380px;
+    margin-bottom: 40px;
+  }
+
+  .container2 {
+
+    width: 53%;
+    height: 340px;
+   
+    margin: 0 auto; /* Center the container */
+
+  
+    scale: 1;
+  }
+
+
+
+  .image2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    
+  }
+
+
+
+  .c3 {
+ 
+    height: 430px;
+    width: 100%;
+  }
+
+  .container3 {
+
+    width: 80%;
+    height: 350px;
+   
+    margin: 0 auto; /* Center the container */
+    
+  }
+
+
+
+  .image3 {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.dealbuynow {
+  
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+}
+
+.dealbuynow2 {
+  
+  background-color:#09ff2aa1 ;
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+
+}
+.dealbuynow3 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+
+.dealtitle {
+  background-color:#00d9ffa1 ;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+ }
+ .maincontainer {
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  border-style: solid;
+  scale: 0.9;
+ }
+
+ .verticalcontainer {
+
+  display: flex; /* Show the vertical container */
+  flex-direction: column; /* Stack items vertically */
+  width: 80%;
+  align-items: center;
+   
+
+}
+
+.footer {
+  position: relative; /* Default position */
+  width: 100%;
+  background-color: #bbbbbb;
+  color: rgb(44, 36, 36);
+ 
+  padding: 10px 0;
+  margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+
+  
+}
+
+.footer p { /* the text of the footer */
+
+   
+  margin-top:  -10px;
+  
+  font-family: sans-serif;
+  font-weight: 600;
+ 
+
+}
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) { 
+
+
+
+
+
+  .menu {
+    display: flex; /* Ensure the menu is flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-around; /* Space items evenly */
+    max-height: none; /* Remove height restriction */
+    opacity: 1; /* Fully visible */
+    background-color: #00d9ffa1; /* Optional: remove background color */
+    padding: 1; /* Optional: remove padding */
+  }
+
+
+
+
+  .menu a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Ensure the text color is visible */
+    font-weight: bold;
+  }
+
+
+
+  .menu-toggle {
+    display: none; /* Hide the toggle button */
+
+    
+  }
+  .header {
+    border-style: solid;
+    visibility: hidden;
+  }
+
+  .container1 {
+      
+    width: 99%;
+    height: 92%;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 50px;
+   
+  }
+
+
+  .image1 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Green glow */
+  }
+
+  .c1 {
+    
+    height: 750px;
+   
+    width: 60%;
+    scale: 1;
+  }
+
+
+  .c2 {
+   
+    width: 100%;
+ 
+    
+    height: 380px;
+    margin-bottom: 40px;
+  }
+
+  .container2 {
+
+    width: 60%;
+    height: 340px;
+   
+    margin: 0 auto; /* Center the container */
+
+  
+    scale: 1;
+  }
+
+
+
+  .image2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    
+  }
+
+
+
+  .c3 {
+ 
+    height: 430px;
+    width: 100%;
+  }
+
+  .container3 {
+
+    width: 80%;
+    height: 350px;
+   
+    margin: 0 auto; /* Center the container */
+    
+  }
+
+
+
+  .image3 {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.dealbuynow {
+  
+    background-color:#09ff2aa1 ;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+   
+  
+}
+
+.dealbuynow2 {
+  
+  background-color:#09ff2aa1 ;
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+
+}
+.dealbuynow3 {
+  
+  background-color:#09ff2aa1 ;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(19, 233, 47, 0.4);
+ 
+
+}
+
+.dealtitle {
+  background-color:#00d9ffa1 ;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 217, 255, 0.4);
+  height: 100px;
+  padding-top: 20px;
+ }
+ .maincontainer {
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  
+  scale: 1;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .verticalcontainer {
+
+  display: flex; /* Show the vertical container */
+  flex-direction: column; /* Stack items vertically */
+  width: 100%;
+  align-items: center;
+  
+
+}
+
+.footer {
+  position: relative; /* Default position */
+  width: 100%;
+  background-color: #bbbbbb;
+  color: rgb(44, 36, 36);
+ 
+  padding: 10px 0;
+  margin-top: 40%; /* Push the footer to the bottom of the page if content is short */
+
+  
+}
+
+.footer p { /* the text of the footer */
+
+   
+  margin-top:  -10px;
+  
+  font-family: sans-serif;
+  font-weight: 600;
+ 
+
+}
+
+
+
+
+
+
+
+
+}
