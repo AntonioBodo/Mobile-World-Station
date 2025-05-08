@@ -1,47 +1,79 @@
-// Product data (you can replace this with a database or API in the future)
-const products = {
-    iphone13promax: {
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // All products data
+  const products = [
+    {
+      id: "iphone13promax",
       name: "iPhone 13 Pro Max 256GB Black",
-      price: "£330",
+      price: 330,
       image: "Assets/iphone13promax.avif",
-      description: "The iPhone 13 Pro Max features a stunning 6.7-inch Super Retina XDR display, A15 Bionic chip, and an advanced triple-camera system for professional-grade photography."
+      description: "The iPhone 13 Pro Max features a 6.7-inch display, A15 Bionic chip, and advanced camera system."
     },
-    iphone15: {
+    {
+      id: "iphone15",
       name: "iPhone 15 128 GB Black",
-      price: "£464",
+      price: 464,
       image: "Assets/iphone15.avif",
-      description: "The iPhone 15 offers a sleek design, powerful performance, and advanced camera features to capture every moment."
+      description: "The iPhone 15 offers a sleek design, powerful performance, and improved battery life."
     },
-    iphone16promax: {
+    {
+      id: "iphone16promax",
       name: "iPhone 16 Pro Max 256GB Desert Titanium",
-      price: "£887",
+      price: 887,
       image: "Assets/iphone16promax.avif",
-      description: "The iPhone 16 Pro Max redefines innovation with its cutting-edge technology, stunning design, and unmatched performance."
+      description: "The latest iPhone 16 Pro Max with a stunning titanium finish and top-tier specs."
+    },
+    {
+      id: "samsungs24ultra",
+      name: "Galaxy S24 Ultra 256GB Black",
+      price: 556,
+      image: "Assets/samsungs24ultra.avif",
+      description: "Samsung's flagship S24 Ultra with a brilliant display and pro-grade camera."
+    },
+    {
+      id: "phonecaseiphone11",
+      name: "Case iPhone 11",
+      price: 19.99,
+      image: "Assets/phonecaseiphone11.avif",
+      description: "Protective and stylish case for iPhone 11."
+    },
+    {
+      id: "wirelesscharger",
+      name: "Wireless Charger",
+      price: 18.99,
+      image: "Assets/wirelesscharger.jpeg",
+      description: "Fast wireless charger compatible with most smartphones."
     }
-};
+  ];
 
-// Function to get query parameters from the URL
-function getQueryParam(param) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
-}
+  // Get product id from URL
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get('product');
 
-// Load product details based on the query parameter
-document.addEventListener("DOMContentLoaded", () => {
-  const productKey = getQueryParam("product");
-  const product = products[productKey];
+  // Find the product by id
+  const product = products.find(p => p.id === productId);
 
+  const productDetails = document.getElementById('product-details');
   if (product) {
-    const productDetails = document.getElementById("product-details");
     productDetails.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
-      <h2>${product.name}</h2>
-      <p class="price">${product.price}</p>
-      <p class="description">${product.description}</p>
-      <button class="buy-now">Buy Now</button>
-      <button class="add-to-cart">Add to Cart</button>
+      <img src="${product.image}" alt="${product.name}" style="max-width:300px;">
+      <h1>${product.name}</h1>
+      <div class="price">£${product.price}</div>
+      <div class="description">${product.description}</div>
+      <div class="buttons">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
     `;
+    // Add to Cart button functionality
+    productDetails.querySelector('.add-to-cart').addEventListener('click', function() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(product);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert('Added to cart!');
+    });
   } else {
-    document.getElementById("product-details").innerHTML = "<p>Product not found.</p>";
+    productDetails.innerHTML = '<p>Product not found.</p>';
   }
 });
