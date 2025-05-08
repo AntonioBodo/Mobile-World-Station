@@ -46,7 +46,9 @@ body {
   color: white;
   font-weight: bold;
 }
-
+h2 {
+  text-align: center;
+}
 /* Make navbar horizontal for larger devices */
 @media only screen and (min-width: 768px) {
   .nav-bar {
@@ -144,4 +146,56 @@ body {
   padding: 20px;
   background-color: #00d9ffa1;
   color: white;
+}
+
+/* Add to home.css */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00b8d4;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: opacity 0.3s;
+}
+.notification.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+/* Mobile-friendly menu toggle button */
+.menu-toggle {
+  display: block;
+  background-color: #00b8d4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  letter-spacing: 1px;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: #008cba;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  transform: scale(1.05);
+}
+
+/* Hide the menu toggle on larger screens */
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
